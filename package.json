@@ -1,0 +1,40 @@
+{
+  "name": "orbit-electron",
+  "version": "0.1.0",
+  "description": "Orbit Desktop App",
+  "author": "Haad",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orbitdb/orbit-electron/orbit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/orbitdb/orbit-electron/issues"
+  },
+  "readme": "README.md",
+  "dependencies": {
+    "ipfs-daemon": "^0.3.0-beta.18",
+    "logplease": "^1.2.12",
+    "orbit-web": "github:orbitdb/orbit-web"
+  },
+  "devDependencies": {
+    "electron": "^1.5.0",
+    "grunt": "^1.0.1",
+    "grunt-chmod": "^1.1.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-electron": "^5.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:osx && npm run build:linux",
+    "build:osx": "TARGET_OS=darwin $(npm bin)/grunt build_osx",
+    "build:linux": "TARGET_OS=linux $(npm bin)/grunt build_linux",
+    "dev": "LOG=debug IPFS_FD_MAX=4096 ENV=dev API_ORIGIN=* $(npm bin)/electron .",
+    "start": "npm run electron",
+    "electron": "LOG=debug IPFS_FD_MAX=4096 $(npm bin)/electron .",
+    "publish": "npm run dist && cd bin/ && ipfs add -r dist/ && cd .."
+  }
+}
