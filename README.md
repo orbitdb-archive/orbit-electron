@@ -65,7 +65,7 @@ npm start
 
 ### Run
 
-*NOTE! Before running this command, make sure you have [orbit-web](https://github.com/orbitdb/orbit-web#run-1) development server running*
+*NOTE! Before running this command, make sure you have [orbit-web](https://github.com/orbitdb/orbit-web#run) development server running*
 
 ```
 npm run dev
