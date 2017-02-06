@@ -6,6 +6,12 @@
 
 Desktop App for Orbit.
 
+Built with the following packages:
+
+- [orbit-web](https://github.com/orbitdb/orbit-web) - UI for the application.
+- [orbit-core](https://github.com/orbitdb/orbit-core) - Core Orbit communication library.
+- [orbit-db](https://github.com/orbitdb/orbit-db) - Serverless, p2p database that orbit-core uses to store its data.
+
 **This repo is currently being transfered from https://github.com/haadcode/orbit and is work in progress. YMMV.**
 
 <img src="https://raw.githubusercontent.com/haadcode/orbit/master/screenshots/screenshot4%202016-04-16.png" width="80%">
@@ -45,7 +51,6 @@ cd orbit-electron/
 ### Start the App
 
 ```
-make
 make start
 ```
 
@@ -60,13 +65,11 @@ npm start
 
 ### Run
 
-*NOTE! Before running this command, make sure you have `orbit-web` development version running*
+*NOTE! Before running this command, make sure you have [orbit-web](https://github.com/orbitdb/orbit-web#run-1) development server running*
 
 ```
 npm run dev
 ```
-
-*Run will start a development server, open the app in the browser and watch for changes in the source files. Upon change, it'll automatically compile and reload the app in the browser*
 
 ### Build
 
@@ -82,12 +85,16 @@ or
 npm run build
 ```
 
-#### Distributable Packages
+*This will create binaries for OSX and Linux in `bin/`*
+
+### Distributable Packages
 
 ```
 make build
 make dist
 ```
+
+*This will create `bin/dist/orbit-darwin-x64.tar.gz` and `bin/dist/orbit-linux-x64.tar.gz` and add them to IPFS.*
 
 ## Contributing
 

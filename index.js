@@ -142,8 +142,8 @@ app.on('ready', () => {
 
       // Create IPFS instance
       ipfs = new IpfsDaemon(ipfsDaemonSettings)
-      
-      // We have a running IPFS daemon      
+
+      // We have a running IPFS daemon
       ipfs.on('ready', () => {
         // Pass the ipfs (api) instance and gateway address to the renderer process
         global.ipfsInstance = ipfs

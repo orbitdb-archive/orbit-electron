@@ -13,20 +13,23 @@ build: deps
 	@echo "Build is in 'bin/'"
 	@echo "Run 'make dist' to build the distribution packages for orbit-electron app."
 
-start:
+start: deps
 	npm start
 
-dist:
+package:
 	rm -rf bin/dist/
 	mkdir -p bin/dist/
-	cd bin/ && tar -zcvf dist/orbit-darwin-x64.tar.gz Orbit-darwin-x64/
-	cd bin/ && tar -zcvf dist/orbit-linux-x64.tar.gz Orbit-linux-x64/
+	cd bin/ && tar -zcf dist/orbit-darwin-x64.tar.gz Orbit-darwin-x64/
+	cd bin/ && tar -zcf dist/orbit-linux-x64.tar.gz Orbit-linux-x64/
 	@echo "Distribution packages are in: bin/dist/"
 
+dist: package
+	cd bin/dist/ && ipfs add -r .
+
 clean:
-	rm -rf .tmp/
-	rm -rf node_modules/
 	rm -rf bin/
+	rm -rf node_modules/
 	rm -rf orbit-dev-data/
+	rm -rf .tmp/
 
 .PHONY: start
