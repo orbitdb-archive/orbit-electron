@@ -147,7 +147,7 @@ app.on('ready', () => {
       ipfs.on('ready', () => {
         // Pass the ipfs (api) instance and gateway address to the renderer process
         global.ipfsInstance = ipfs
-        global.gatewayAddress = ipfs.GatewayAddress
+        global.gatewayAddress = ipfs.GatewayAddress || 'http://localhost:8080/'
         mainWindow.webContents.send('ipfs-daemon-instance')
       })
 
