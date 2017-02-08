@@ -19,8 +19,10 @@ start: deps
 package:
 	rm -rf bin/dist/
 	mkdir -p bin/dist/
-	cd bin/ && tar -zcf dist/orbit-darwin-x64.tar.gz Orbit-darwin-x64/
-	cd bin/ && tar -zcf dist/orbit-linux-x64.tar.gz Orbit-linux-x64/
+	# Note: The `master` is hardcoded to match https://github.com/ipfs/distributions/blob/master/site/public/_js/_platform.js#L27
+	# This should be changed later
+	cd bin/ && tar -zcf dist/orbit_master_darwin-amd64.tar.gz Orbit-darwin-x64/
+	cd bin/ && tar -zcf dist/orbit_master_linux-amd64.tar.gz Orbit-linux-x64/
 	@echo "Distribution packages are in: bin/dist/"
 
 dist: package
