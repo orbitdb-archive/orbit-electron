@@ -92,7 +92,9 @@ make build
 make dist
 ```
 
-*This will create `bin/dist/orbit-darwin-x64.tar.gz` and `bin/dist/orbit-linux-x64.tar.gz` and add them to IPFS.*
+*This will create `bin/dist/orbit_master_darwin-amd64.tar.gz` and `bin/dist/orbit_master_linux-amd64.tar.gz` and add them to IPFS.*
+
+Note: electron names the folders after the arch, and uses the `x64` nomenclature instead of `amd64`. They are the same thing; we create tarballs with `amd64` to match the golang distributions on [ipfs/distributions](https://github.com/ipfs/distributions).
 
 ## Contributing
 
