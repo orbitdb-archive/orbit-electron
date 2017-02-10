@@ -39,6 +39,16 @@ See also:
 - [npm v3.x.x](https://npmjs.com)
 - g++, gcc, make, python 2
 
+**NOTE:** Orbit requires a newer version of gcc to compile crypto libraries. `gcc 6.2.1` has been tested successfully, `gcc 4.9.2` is known to fail at runtime.
+
+Standard `gcc` versions for various distros are listed below:
+Arch Linux `gcc 6.2.1`
+Debian Stretch `gcc 6.2.1`
+Debian Jessie `gcc 4.9`
+RHEL7 `gcc 4.8`
+Ubuntu 16.04 LTS `gcc 5.3+`
+OSX Uses `CLANG`, not `gcc`. Verification needed.
+
 ### Get the source code
 
 ```
