@@ -19,10 +19,10 @@ start: deps
 package:
 	rm -rf bin/dist/
 	mkdir -p bin/dist/
-	# Note: The `master` is hardcoded to match https://github.com/ipfs/distributions/blob/master/site/public/_js/_platform.js#L27
-	# This should be changed later
-	cd bin/ && tar -zcf dist/orbit_$(shell git rev-parse HEAD | egrep -o '.{7}' | head -n1)_darwin-amd64.tar.gz Orbit-darwin-x64/
-	cd bin/ && tar -zcf dist/orbit_$(shell git rev-parse HEAD | egrep -o '.{7}' | head -n1)_linux-amd64.tar.gz Orbit-linux-x64/
+	# Note: This is used by https://github.com/ipfs/distributions/blob/master/site/public/_js/_platform.js#L27
+	# The naming scheme comes from that.
+	cd bin/ && tar -zcf dist/orbit_$(shell node -pe "require('./package.json').version")_darwin-amd64.tar.gz Orbit-darwin-x64/
+	cd bin/ && tar -zcf dist/orbit_$(shell node -pe "require('./package.json').version")_linux-amd64.tar.gz Orbit-linux-x64/
 	@echo "Distribution packages are in: bin/dist/"
 
 dist: package
