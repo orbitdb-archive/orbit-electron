@@ -21,8 +21,8 @@ package:
 	mkdir -p bin/dist/
 	# Note: The `master` is hardcoded to match https://github.com/ipfs/distributions/blob/master/site/public/_js/_platform.js#L27
 	# This should be changed later
-	cd bin/ && tar -zcf dist/orbit_master_darwin-amd64.tar.gz Orbit-darwin-x64/
-	cd bin/ && tar -zcf dist/orbit_master_linux-amd64.tar.gz Orbit-linux-x64/
+	cd bin/ && tar -zcf dist/orbit_$(shell git rev-parse HEAD | egrep -o '.{7}' | head -n1)_darwin-amd64.tar.gz Orbit-darwin-x64/
+	cd bin/ && tar -zcf dist/orbit_$(shell git rev-parse HEAD | egrep -o '.{7}' | head -n1)_linux-amd64.tar.gz Orbit-linux-x64/
 	@echo "Distribution packages are in: bin/dist/"
 
 dist: package
