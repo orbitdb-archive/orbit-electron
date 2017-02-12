@@ -52,7 +52,7 @@ OSX Uses `CLANG`, not `gcc`. Verification needed.
 ### Get the source code
 
 ```
-git clone https://github.com/orbitdb/orbit-electron/orbit-electron.git
+git clone https://github.com/orbitdb/orbit-electron.git
 cd orbit-electron/
 ```
 
