@@ -16,7 +16,7 @@
   "dependencies": {
     "ipfs-daemon": "^0.3.0-beta.18",
     "logplease": "^1.2.12",
-    "orbit-web": "^0.0.6"
+    "orbit-web": "~0.1.1"
   },
   "devDependencies": {
     "electron": "^1.5.0",
