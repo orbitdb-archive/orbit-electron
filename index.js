@@ -11,7 +11,7 @@ const dialog        = electron.dialog
 const fs            = require('fs')
 const path          = require('path')
 const Logger        = require('logplease')
-const IpfsDaemon    = require('ipfs-daemon')
+const IpfsDaemon    = require('ipfs-daemon/src/ipfs-node-daemon')
 const WindowConfig  = require('./config/window.config')
 const OrbitConfig   = require('./config/orbit.config')(app)
 
