@@ -1,12 +1,12 @@
 # orbit-electron
 
-[![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://ipn.io)
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/orbitdb/Lobby)
 [![](https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23ipfs)
 [![Project Status](https://badge.waffle.io/haadcode/orbit.svg?label=In%20Progress&title=Roadmap)](http://waffle.io/haadcode/orbit)
 
 > A distributed, peer-to-peer chat application built on [IPFS](http://ipfs.io)
 
-Desktop App for [Orbit](https://github.com/orbitdb/orbit). 
+Desktop App for [Orbit](https://github.com/orbitdb/orbit).
 
 *Currently works in OSX and Linux. We're working on Windows support.*
 
@@ -27,6 +27,21 @@ See also:
 - [orbit-textui](https://github.com/orbitdb/orbit-textui) - Terminal client prototype for Orbit.
 - [orbit-db](https://github.com/orbitdb/orbit-db) - Serverless, p2p database that orbit-core uses to store its data.
 - [IPFS](https://ipfs.io) - IPFS
+
+## Table of Contents
+
+- [Run](#run)
+	- [Download Binaries](#download-binaries)
+	- [Requirements](#requirements)
+	- [Get the source code](#get-the-source-code)
+	- [Start the App](#start-the-app)
+	- [Development](#development)
+  	- [Run](#run)
+	- [Build](#build)
+		- [Release](#release)
+	- [Distributable Packages](#distributable-packages)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Run
 
@@ -108,9 +123,9 @@ Note: electron names the folders after the arch, and uses the `x64` nomenclature
 
 ## Contributing
 
-We would be happy to accept PRs! If you want to work on something, it'd be good to talk beforehand to make sure nobody else is working on it. You can reach us on IRC #ipfs on Freenode, or in the comments of the [issues section](https://github.com/orbitdb/orbit/issues).
+If you think this could be better, please [open an issue](https://github.com/orbitdb/orbit-electron/issues/new)!
 
-A good place to start are the issues labelled ["help wanted"](https://github.com/orbitdb/orbit/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22+sort%3Areactions-%2B1-desc) or the project's [status board](https://waffle.io/haadcode/orbit).
+Please note that all interactions in [@orbitdb](https://github.com/orbitdb) fall under our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## License
 
