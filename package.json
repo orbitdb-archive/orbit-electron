@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "description": "Orbit Desktop App",
   "author": "Haad",
+  "contributors":[
+    "haadcode",
+    "RichardLitt",
+    "adam-palazzo"
+  ],
   "license": "MIT",
   "main": "index.js",
   "repository": {
@@ -11,6 +16,9 @@
   },
   "bugs": {
     "url": "https://github.com/orbitdb/orbit-electron/issues"
+  },
+  "homepage": {
+    "url": "https://github.com/orbitdb/orbit-electron/"
   },
   "readme": "README.md",
   "dependencies": {
