@@ -1,8 +1,6 @@
 # orbit-electron
 
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/orbitdb/Lobby)
-[![](https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23ipfs)
-[![Project Status](https://badge.waffle.io/haadcode/orbit.svg?label=In%20Progress&title=Roadmap)](http://waffle.io/haadcode/orbit)
 
 > A distributed, peer-to-peer chat application built on [IPFS](http://ipfs.io)
 
