@@ -1,5 +1,6 @@
 {
   "name": "orbit-electron",
+  "private": true,
   "version": "0.1.0",
   "description": "Orbit Desktop App",
   "author": "Haad",
