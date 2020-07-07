@@ -28,7 +28,7 @@
     "orbit-web": "^0.0.6"
   },
   "devDependencies": {
-    "electron": "^1.5.0",
+    "electron": "^9.1.0",
     "grunt": "^1.0.1",
     "grunt-chmod": "^1.1.1",
     "grunt-contrib-clean": "^1.0.0",
